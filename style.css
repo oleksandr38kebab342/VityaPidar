@@ -40,7 +40,7 @@ h1 {
 }
 
 .gallery img {
-    width: 100%;
+    width: 150%;
     max-width: 300px;
     height: auto;
     object-fit: cover;
