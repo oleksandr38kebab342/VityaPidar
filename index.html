@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт з заголовком та анімацією салюту</title>
+    <title>ПІДАРАС</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,11 +15,16 @@
 
     <main>
         <div class="gallery">
-            <img src="1.jpg" alt="Фото 1">
-            <img src="image2.jpg" alt="Фото 2">
-            <img src="image3.jpg" alt="Фото 3">
+            <img src="2.png" alt="Фото 1" onclick="openModal(this.src)">
+            <img src="3.png" alt="Фото 2" onclick="openModal(this.src)">
+            <img src="4.png" alt="Фото 3" onclick="openModal(this.src)">
         </div>
     </main>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <script src="script.js"></script>
 </body>
